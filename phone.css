@@ -1,0 +1,163 @@
+/* Navigation */
+#navbar{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#navbar ul li a{
+    font-size: 0.6rem;
+}
+
+#logo{
+    margin: 0px 0px;
+
+}
+#logo img{
+    /* logo ke center korte parchina */
+    height: 20px;
+    width: 30%;
+    margin: auto;
+
+    display: block;
+
+    
+    
+}
+
+#navbar::before{
+    padding: 2px 2px;
+    
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 700%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li a{
+    
+    padding: 2px 2px;
+    
+    
+}
+
+/* Home */
+#home{
+    height: 226px;
+    flex-direction: column;
+    padding: 0px 0px;
+    width: 60%;
+
+}
+
+#home::before{
+    content: "";
+    background: url('./food55.jpg') no-repeat center center/cover ;
+    
+    /* flex-direction: column; */
+    position: absolute;
+    height: 300px;
+    width: auto;
+    z-index: -1;
+    opacity: 0.7;
+    
+}
+#home p{
+    font-size: 0.3rem;
+
+
+}
+
+
+
+/* services */
+#services{
+flex-direction: column;
+
+}
+
+#services .box{
+    border:2px solid brown;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px 2px;
+    margin: 2px 0px;
+    border-radius: 23px;
+    background-color: rgb(226, 212, 212);
+}
+#services .box img{
+
+    padding: 0px 2px;
+    height: 150px;
+    margin: auto;
+    /* display: block; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* client*/
+#clients{
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+#clients img{
+    width: 60px;
+    padding: 8px;
+    height: auto;
+    
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(./back2.jpeg) no-repeat center center/cover;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.65;
+    
+}
+
+/* contact */
+#contact-box{
+    width:80%;
+}
+
+
+
+/* footer */
+
+
+
+/* utility class */
+
+.h-primary{
+    font-size: 26px;
+    padding: 1px;
+    /* text-align: center; */
+    font-family: 'Bree Serif', serif;
+    /* font
+    -family: 'Zen Dots', cursive; */
+}
+.h-primaryDifferent{
+    font-size: 9px;
+    padding: 1px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    /* font
+    -family: 'Zen Dots', cursive; */
+}
+
+.h-secondary {
+    font-size: 1rem;
+    padding: 14px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    /* font
+    -family: 'Zen Dots', cursive; */
+}
+.btn{
+    font-size: 5px ;
+    padding: 1px 6px;
+    margin: 10px;
+}
